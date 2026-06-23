@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一个关于 MK体育 的简明指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #faf9f7;
+            font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+            line-height: 1.75;
+            color: #2d2a24;
+            padding: 2.8rem 1.2rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-wrapper {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 3.2rem 2.8rem;
+            border-radius: 28px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.01);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #1f1c17;
+            margin-top: 0.2rem;
+            margin-bottom: 1.2rem;
+            line-height: 1.3;
+            border-left: 3px solid #b3a084;
+            padding-left: 1.2rem;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #7a7167;
+            margin-bottom: 2.6rem;
+            font-style: italic;
+            border-bottom: 1px solid #e6e1da;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.6rem;
+            font-size: 1.02rem;
+            color: #3d3832;
+        }
+
+        .intro-quote {
+            font-size: 1.15rem;
+            color: #4a433b;
+            background-color: #f6f3ef;
+            padding: 1.6rem 2rem;
+            border-radius: 16px;
+            margin: 1.8rem 0 2.2rem 0;
+            line-height: 1.8;
+            border: none;
+            font-style: normal;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 2.2rem 0 2.6rem 0;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 0.9rem 0 0.9rem 2rem;
+            border-bottom: 1px dashed #e0d9d0;
+            position: relative;
+            font-size: 1rem;
+            color: #3b362f;
+        }
+
+        .feature-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #b3a084;
+            font-weight: 300;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .highlight-link-wrap {
+            background-color: #f3efe9;
+            padding: 1.6rem 2rem;
+            border-radius: 20px;
+            margin: 2.4rem 0 1.8rem 0;
+            text-align: left;
+            font-size: 1.05rem;
+            color: #2d2a24;
+            border: 1px solid #e5ddd3;
+        }
+
+        a {
+            color: #7a6b58;
+            text-decoration: none;
+            border-bottom: 1px solid #c9bcac;
+            transition: border-color 0.15s, color 0.15s;
+            font-weight: 400;
+        }
+
+        a:hover {
+            color: #4d3e2e;
+            border-bottom-color: #4d3e2e;
+        }
+
+        .note-box {
+            background: #ffffff;
+            border-left: 4px solid #d6cdbf;
+            padding: 1.2rem 1.6rem;
+            margin: 2rem 0 1.2rem 0;
+            font-size: 0.95rem;
+            color: #4f4941;
+            border-radius: 0 12px 12px 0;
+            background-color: #fcfbf9;
+        }
+
+        .faq-summary {
+            margin-top: 2.6rem;
+            border-top: 1px solid #e6e1da;
+            padding-top: 2rem;
+        }
+
+        .faq-summary h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #1f1c17;
+            margin-bottom: 1.4rem;
+            letter-spacing: 0.5px;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #2d2a24;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .faq-item span {
+            color: #4f4941;
+            font-size: 0.96rem;
+        }
+
+        .footer-note {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #9b9084;
+            text-align: center;
+            border-top: 1px solid #eeebe6;
+            padding-top: 1.8rem;
+            letter-spacing: 0.3px;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+
+            .page-wrapper {
+                padding: 2rem 1.5rem;
+                border-radius: 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                padding-left: 1rem;
+            }
+
+            .intro-quote {
+                padding: 1.2rem 1.4rem;
+                font-size: 1.05rem;
+            }
+
+            .highlight-link-wrap {
+                padding: 1.2rem 1.4rem;
+                font-size: 1rem;
+            }
+
+            .feature-list li {
+                padding-left: 1.5rem;
+                font-size: 0.97rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .page-wrapper {
+                padding: 1.5rem 1rem;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .subhead {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <h1>MK体育：一份安静的访问笔记</h1>
+        <div class="subhead">从一次简单的浏览说起</div>
+
+        <p>
+            开始之前，不妨先泡杯茶。你即将打开的页面，属于一个叫做 <a href="https://app-home-mksports.com">MK体育</a> 的地方。它的界面不算喧哗，入口也藏得并不深，但初次接触时，或许仍需要一点方向感。
+        </p>
+
+        <div class="intro-quote">
+            这里没有复杂的指引，只有几个朴素的观察：多数时候，你只需要确定自己身处正确的页面，然后顺着文字和按钮的脉络往下走。速度与耐心，缺一不可。
+        </div>
+
+        <p>
+            以下是一些零碎的提醒，算不上教程，更像是一份朋友手写的便签。它们来自几次浏览后的体会，未必全面，但或许能让你在打开 <a href="https://app-home-mksports.com">MK体育</a> 时，少一分犹豫。
+        </p>
+
+        <ul class="feature-list">
+            <li><strong>页面结构</strong> —— 主区域通常集中在视野中央，导航清晰但克制，没有多余的弹窗干扰。</li>
+            <li><strong>内容分区</strong> —— 信息按模块划分，标题与正文之间留有足够的呼吸感，不容易看岔行。</li>
+            <li><strong>操作反馈</strong> —— 按钮点击后有轻微的状态变化，不算快，但足以让人知道系统已收到指令。</li>
+            <li><strong>访问习惯</strong> —— 建议使用常用浏览器，保持网络稳定。页面加载速度中规中矩，偶尔需要几秒钟的等待。</li>
+            <li><strong>移动端适配</strong> —— 手机上的布局会重新排列，依然保留了桌面端的核心功能，但部分字体略小，可以双指缩放。</li>
+        </ul>
+
+        <div class="highlight-link-wrap">
+            ✦ 如果你还没有尝试过，可以直接前往 <a href="https://app-home-mksports.com">MK体育</a> 看一眼。不需要做任何准备，页面会自己展开。
+        </div>
+
+        <div class="note-box">
+            <strong>一点小提示：</strong> 第一次访问时，可能会遇到加载中的空白界面，通常稍等片刻就会恢复正常。如果长时间没有响应，检查一下网络连接，或者关闭再打开页面。
+        </div>
+
+        <p>
+            和许多同类网站一样，<a href="https://app-home-mksports.com">MK体育</a> 没有在首页堆砌太多说明。大部分功能需要你实际点击后才能理解它的逻辑。这算不上缺点，只是需要一点探索的意愿。
+        </p>
+
+        <div class="faq-summary">
+            <h2>几个常见问题摘要</h2>
+            <div class="faq-item">
+                <strong>问：页面加载缓慢怎么办？</strong>
+                <span>建议先检查本地网络，或更换一个时间段再试。服务器响应速度在正常范围内，但偶有波动。</span>
+            </div>
+            <div class="faq-item">
+                <strong>问：忘记登录信息如何处理？</strong>
+                <span>页面提供了找回入口，按照提示操作即可。整个过程需要验证一些基本信息，请耐心填写。</span>
+            </div>
+            <div class="faq-item">
+                <strong>问：移动端和电脑端有什么区别？</strong>
+                <span>核心功能一致，但移动端的菜单被折叠成了抽屉样式。浏览时建议横屏观看某些表格类内容。</span>
+            </div>
+        </div>
+
+        <p style="margin-top: 2rem;">
+            写到最后，觉得还是那句话最贴切：把 <a href="https://app-home-mksports.com">MK体育</a> 当作一个普通但用心整理的网站就好。不必抱着过高的期待，也无需提前设防。它就在那里，安静地等着你打开。
+        </p>
+
+        <div class="footer-note">
+            一份安静的笔记 · 基于实际浏览经验 · 内容仅供个人参考
+        </div>
+    </div>
+</body>
+</html>
